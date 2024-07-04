@@ -4,8 +4,6 @@ Certainly! Here's a sample `README.md` file for your Streamlit app:
 
 # OEE Improvement App
 
-![OEE Image](https://images.unsplash.com/photo-1549490346-0e8493a8e5ea)
-
 ## Overview
 
 The OEE Improvement App is designed to help analyze and improve Overall Equipment Effectiveness (OEE) metrics. OEE is a critical metric used in manufacturing to measure the efficiency of production processes. This app allows users to explore OEE data, visualize trends, and gain insights to enhance operational efficiency.
