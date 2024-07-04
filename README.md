@@ -26,7 +26,7 @@ The OEE (Overall Equipment Effectiveness) Improvement App is designed to help an
 - **Interactive Visualizations**: Explore data through various interactive charts and graphs.
 - **CSV Upload**: Upload your own CSV file for personalized analysis.
 
-## Running the Apps
+#### Running the Apps
 
 You can run the OEE Improvement App directly on Streamlit Cloud using the following link:
 
