@@ -46,7 +46,7 @@ Please ensure your app includes a brief description and any necessary instructio
 
 **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/streamlit.git
+   git clone https://github.com/ahmadbinsadiq/Streamlit-Apps.git
 
 ---
 
