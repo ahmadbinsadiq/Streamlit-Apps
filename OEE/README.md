@@ -1,6 +1,3 @@
-Certainly! Here's a sample `README.md` file for your Streamlit app:
-
----
 
 # OEE Improvement App
 
