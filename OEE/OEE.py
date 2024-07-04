@@ -32,6 +32,12 @@ def load_example_data():
 def load_uploaded_data(uploaded_file):
     return pd.read_csv(uploaded_file)
 
+# Function to calculate average OEE
+def calculate_average_oee(data):
+    oee_columns = ['productivity', 'efficiency', 'quality']
+    data['oee_average'] = data[oee_columns].mean(axis=1)
+    return data['oee_average'].mean()
+
 # Function to display home page
 def display_home():
     st.title("Welcome to the OEE Improvement App")
@@ -54,7 +60,13 @@ def display_home():
     **Data Requirements:**
     - The data should include the following columns: `date`, `productivity`, `efficiency`, `quality`, `cycle_time`, `throughput`, `yield`, `scrap_rate`, `downtime`.
     """)
+
+    st.image("https://images.unsplash.com/photo-1549490346-0e8493a8e5ea", use_column_width=True)
     
+    # Calculate and display average OEE
+    example_data = load_example_data()
+    avg_oee = calculate_average_oee(example_data)
+    st.write(f"### Average OEE Value (Example Data): {avg_oee:.2f}%")
 
 # Function to display data page
 def display_data(data):
@@ -66,8 +78,10 @@ def display_data(data):
 
 # Function to display visualizations page
 def display_visualizations(data):
+    st.write("# Data Analysis")
+    st.write("## Average OEE")
+    st.write("The average OEE of the data is: ", calculate_average_oee(data))
     st.write("## Data Visualizations")
-    
     # Custom layout for Plotly
     layout = go.Layout(
         template="plotly_dark",
@@ -115,7 +129,7 @@ def main():
                 return
         
         st.sidebar.title("Data Analysis")
-        analysis_option = st.sidebar.selectbox("Choose Analysis", ["Data Preview", "Data Visualizations"])
+        analysis_option = st.sidebar.selectbox("Choose Analysis", ["Data Preview", "Data Insights and Visualizations"])
         
         if analysis_option == "Data Preview":
             display_data(data)
