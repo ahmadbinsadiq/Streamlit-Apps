@@ -20,7 +20,7 @@ The OEE Improvement App is designed to help analyze and improve Overall Equipmen
 
 You can run the OEE Improvement App directly on Streamlit Cloud using the following link:
 
-[OEE Improvement App](https://share.streamlit.io/your-username/streamlit/main/oee_app/app.py)
+[OEE Improvement App](https://foydg3qulunhq7kbv8incy.streamlit.app/)
 
 ## How to Use
 
