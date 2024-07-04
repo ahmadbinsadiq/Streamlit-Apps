@@ -16,6 +16,12 @@ The OEE Improvement App is designed to help analyze and improve Overall Equipmen
 - **Visualizations:** Generate interactive plots to visualize productivity, efficiency, quality, cycle time, throughput, yield, scrap rate, and downtime.
 - **Data Input:** Supports both example data and user-uploaded CSV files.
 
+## Running the Apps
+
+You can run the OEE Improvement App directly on Streamlit Cloud using the following link:
+
+[OEE Improvement App](https://share.streamlit.io/your-username/streamlit/main/oee_app/app.py)
+
 ## How to Use
 
 1. **Navigation:**
@@ -47,4 +53,10 @@ The OEE Improvement App is designed to help analyze and improve Overall Equipmen
 
 If you have any feedback, suggestions, or issues, please feel free to contact us or open an issue in this repository.
 
+**Clone the repository:**
+   ```bash
+   git clone https://github.com/ahmadbinsadiq/Streamlit-Apps.git
+
 ---
+
+Happy Coding!
