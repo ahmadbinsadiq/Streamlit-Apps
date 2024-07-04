@@ -61,7 +61,6 @@ def display_home():
     - The data should include the following columns: `date`, `productivity`, `efficiency`, `quality`, `cycle_time`, `throughput`, `yield`, `scrap_rate`, `downtime`.
     """)
 
-    st.image("https://images.unsplash.com/photo-1549490346-0e8493a8e5ea", use_column_width=True)
     
     # Calculate and display average OEE
     example_data = load_example_data()
